@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-ARG PACKAGE_VERSION="=3.2.1-1+stretch1"
+ARG PACKAGE_VERSION="=3.2.1-1+buster1"
 ARG PACKAGE_REPO="https://mirrors.xtom.com/sb/gdnsd"
 
 RUN set -ex; \
