@@ -4,7 +4,7 @@ ARG PACKAGE_VERSION="=3.2.1-1+stretch1"
 ARG PACKAGE_REPO="https://mirrors.xtom.com/sb/gdnsd"
 
 RUN set -ex; \
-    buildDeps='apt-transport-https gnupg'; \
+    buildDeps='ca-certificates gnupg'; \
     apt-get update; \
     apt-get install -y --no-install-recommends $buildDeps; \
     apt-key adv --fetch-keys "$PACKAGE_REPO/public.key"; \
